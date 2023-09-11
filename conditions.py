@@ -19,9 +19,9 @@ dev = ("Nodejs","Angularjs", "java")
 comp_emp1 = {"Name":"Santa","Skill":"Blockchain","Code":1024}
 comp_emp2 = {"Name":"Rocky","Skill":"AI","Code":1218}
 
-usr_skill = input("Enter your desired skill: ")
-#print(usr_skill)
 
+#print(usr_skill)
+usr_skill = input("Enter your desired skill: ")
 #Check in the db if we have this skill
 if usr_skill in devops:
     print(f"we have {usr_skill} in devops team.")
