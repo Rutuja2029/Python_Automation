@@ -28,5 +28,25 @@ def order_food(min_order, *args):
 order_food("Salad","Pizza","Biryani","Soup")
 
 print("==================")
+#variable length arguments - **kwargs(keyword arguments)
+"""
+    Input : Multilple values for minutes , key= value pair activity
+    output = return sum of minutes + random minutes spend on a random activity
+"""
+import random
+def time_activity(*args , **kwargs):
+    print(args)
+    print(kwargs)
+    min = sum(args) + random.randint(0,60)
+    print(min)
+    choice = random.choice(list(kwargs.keys()))
+    print(choice)
+    choiceVal = random.choice(list(kwargs.values()))
+    print(choiceVal)
+    
+    print(f"You have to spend {min} minutes for {kwargs[choice]}")
+    
+ 
 
+time_activity (10, 20, 30, hobby = "Dance", sports = "boxing", fun = "driving", work = "Devops")
 
