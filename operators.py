@@ -90,13 +90,13 @@ str1 = "iot"
 num1= 8
 first_tuple = (str1, "Devops", 47, num1, 1.5)
 ans = "Devops" in first_tuple
-print(ans);
+print(ans)
 
 ans = "Devops" not in first_tuple
-print(ans);
+print(ans)
 
 ans = "Dev" not in first_tuple
-print(ans);
+print(ans)
 
 #Identity operators : is / is not
 
